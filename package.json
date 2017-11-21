@@ -1,0 +1,24 @@
+{
+  "name": "jsproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^2.7.3"
+  },
+  "scripts": {
+    "styles": "lessc style.less style.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinafrykholm/java.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinafrykholm/java/issues"
+  },
+  "homepage": "https://github.com/martinafrykholm/java#readme"
+}

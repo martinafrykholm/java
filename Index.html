@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="contentBlock">
-        <img src="https://s1.discshop.se/img/front_large/41271/en_lektion_i_karlek.jpg">
+        <img id="movieImg" src="">
 
     </div>
 
@@ -18,18 +18,32 @@
     
 
     <div class="contentBlock">
-            <h2>Dagens film: En lektion i kärlek</h2>
-        
-        <p>En lektion i kärlek är en svensk dramafilm från 1954 i regi av Ingmar Bergman. En lektion i kärlek blev en stor internationell framgång och var Bergmans första av tre filmer i en genre, som kan karakteriseras som den lätta erotiska komedin. De två följande var Sommarnattens leende och Kvinnodröm. Samtliga dessa spelades in under perioden 1953-55 och har samma skådespelare i huvudrollerna.
+            <h2 id="movieTitle"></h2>
+
+        <div class="starRating">
+                <span data-rating-id="1">&#9733;</span>
+                
+                          <span data-rating-id="2">&#9733;</span>
+                
+                          <span data-rating-id="3">&#9733;</span>
+                
+                          <span data-rating-id="4">&#9733;</span>
+                
+                          <span data-rating-id="5">&#9733;</span>
+        </div>
+
+        <p id="movieDescription">
             </p>
-            <ul>
-                    <li>Eva Dahlbäck</li>
-                    <li>Gunnar Björnstrand</li>
-                    <li>Yvonne Lombard</li>
-            </ul>>
+
+            <ul id="movieActors">
+            </ul>
     </div>
 
 </div> 
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./data.js"></script>
+<script src="./code.js"></script>
 
 
 </body>

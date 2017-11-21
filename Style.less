@@ -1,0 +1,54 @@
+@bgcolor: #f938ab;
+
+// .contentBlock {
+//   background-color: @bgcolor;
+//   & h2 {
+//     width: 100% * 2 / 3;
+//   }
+// }
+
+.contentBlock{
+    
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: @bgcolor;
+    & h2 {
+      width: 100% * 2 / 3;
+    }
+}
+
+.container{
+
+    width:700px;
+    margin:10px auto; 
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    
+}
+/* 
+#movieImg{
+
+    width:300;
+    max-height:380;
+
+} */
+
+
+.starRating .filledStar{
+color:black;
+
+}
+
+.starRating span{
+    color: white;
+    
+      user-select: none;
+    
+      cursor: pointer;
+    
+      font-size: 20px;
+}
