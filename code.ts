@@ -1,7 +1,7 @@
 
 // let movieData = require("./data");
 import {movieData} from './data';
-let $=require("jquery");
+import * as $ from "jquery";
 
 
 function renderMovie(movie){
