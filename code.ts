@@ -3,18 +3,20 @@
 import {movieData} from './data';
 import * as $ from "jquery";
 
-
-function renderMovie(movie){
-    $("#movieTitle").text(movie.title);
-    $("#movieImg").attr("src", movie.picUrl);
-    $("#movieDescription").text(movie.description);
+import { Review } from "./interfaces";
+function renderMovie(data: Review){
+    $("#movieTitle").text(data.title);
+    $("#movieImg").attr("src", data.picUrl);
+    $("#movieDescription").text(data.description);
     
     $("#movieActors").empty();
     
-      for(let i=0; i<movie.actorList.length; i++){
+      for(let i=0; i<data.actorList.length; i++){
     
-        $("#movieActors").append("<li>" + movie.actorList[i] + "</li>");
+        $("#movieActors").append("<li>"+data.actorList[i]+"</li>");
     
+
+        // append("<li>" + data.actorList[i] + "</li>");
       }
 
 }
@@ -22,6 +24,10 @@ function renderMovie(movie){
 
 renderMovie(movieData);
 
+
+// function renderMovie(data: Review){
+//   // truncated
+// }
 // function renderMovie(movie){
 //     document.getElementById("movieTitle").innerText = movie.title;
 //     document.getElementById("movieImg").setAttribute("src", movie.picUrl);
