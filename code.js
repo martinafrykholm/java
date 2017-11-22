@@ -1,4 +1,9 @@
 
+// let movieData = require("./data");
+import {movieData} from './data';
+let $=require("jquery");
+
+
 function renderMovie(movie){
     $("#movieTitle").text(movie.title);
     $("#movieImg").attr("src", movie.picUrl);
@@ -13,6 +18,9 @@ function renderMovie(movie){
       }
 
 }
+
+
+renderMovie(movieData);
 
 // function renderMovie(movie){
 //     document.getElementById("movieTitle").innerText = movie.title;

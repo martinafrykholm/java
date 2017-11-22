@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "code.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "webpack": "^3.8.1"
   },
   "scripts": {
-    "styles": "lessc style.less style.css"
-    
+    "styles": "lessc style.less style.css",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
