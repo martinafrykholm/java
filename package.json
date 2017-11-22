@@ -13,7 +13,7 @@
   "scripts": {
     "styles": "lessc Style.less distribution/Style.css",
     "bundle": "webpack",
-    "copyindex": "cp index.html distribution/index.html",
+    "copyindex": "cp Index.html distribution/index.html",
     "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "repository": {
