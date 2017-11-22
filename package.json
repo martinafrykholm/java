@@ -11,8 +11,10 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "styles": "lessc style.less style.css",
-    "bundle": "webpack"
+    "styles": "lessc style.less distribution/style.css",
+    "bundle": "webpack",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "repository": {
     "type": "git",
